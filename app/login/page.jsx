@@ -32,9 +32,12 @@ const Login = () => {
             type={'password'}
             name={'password'}
           />
-          <p className="flex justify-end text-sm text-sectify">
+          <Link
+            href={'/reset'}
+            className="flex justify-end text-sm text-sectify"
+          >
             Forgot Password?
-          </p>
+          </Link>
           <Button href={''} css={'my-3'}>
             Sign in
           </Button>
