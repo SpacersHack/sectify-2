@@ -1,0 +1,15 @@
+.main {
+  @apply flex h-screen flex-col items-center justify-center  md:p-24  relative;
+}
+
+.main::after {
+  @apply bg-black opacity-40 top-0 left-0 w-full h-full content-[''] absolute -z-10;
+}
+
+.header {
+  @apply absolute top-0 left-0 w-full px-2 md:px-28 py-8;
+}
+
+.nav {
+  @apply flex justify-between items-center bg-white py-4 rounded-lg px-3;
+}
