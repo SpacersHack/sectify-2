@@ -48,10 +48,9 @@ const Login = () => {
               sign in
             </Link>
           </p>
-          <p className="flex justify-end text-sm my-4">
-            By signing up you accept our {'     '}
-            <span className="text-sectify">
-              {' '}
+          <p className="text-center text-sm my-4">
+            By signing up you accept our{' '}
+            <span className="text-sectify inline-block">
               terms and condition & private policy
             </span>
           </p>
