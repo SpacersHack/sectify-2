@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import Button from '../component/button';
 import SectifyInput from '../component/input';
-import styles from './login.module.css';
+import styles from './register.module.css';
 
 const Login = () => {
   return (
@@ -10,7 +10,7 @@ const Login = () => {
         <aside className="text-center">
           <h3 className="my-3 text-xl font-semibold">SECTIFY</h3>
           <p className="text-center">
-            Sign in to cast your vote for who you believe in.{' '}
+            Sign Up to cast your vote for who you believe in.{' '}
           </p>
         </aside>
         <form action="" className="w-full mt-6">
@@ -19,6 +19,12 @@ const Login = () => {
             placeholder={'Enter full name'}
             type={'text'}
             name={'fullname'}
+          />
+          <SectifyInput
+            title="Vin"
+            placeholder={'Enter Vin'}
+            type={'text'}
+            name={'vin'}
           />
           <SectifyInput
             title="Email address"
@@ -32,17 +38,22 @@ const Login = () => {
             type={'password'}
             name={'password'}
           />
-          <p className="flex justify-end text-sm text-sectify">
-            Forgot Password?
-          </p>
+
           <Button href={''} css={'my-3'}>
-            Sign in
+            Sign up
           </Button>
           <p className="text-center">
-            Dont have an account ?{' '}
-            <Link href={'/register'} className="text-sectify">
-              sign up
+            Already have an account ?{' '}
+            <Link href="/login" className="text-sectify">
+              sign in
             </Link>
+          </p>
+          <p className="flex justify-end text-sm my-4">
+            By signing up you accept our {'     '}
+            <span className="text-sectify">
+              {' '}
+              terms and condition & private policy
+            </span>
           </p>
         </form>
       </section>

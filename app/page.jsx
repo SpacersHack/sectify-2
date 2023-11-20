@@ -1,21 +1,35 @@
+import Link from 'next/link';
 import Button from './component/button';
 import styles from './landing.module.css';
 
 export default function Landing() {
-  const nav = ['Sign in', 'Sign up'];
+  const nav = [
+    {
+      name: 'Sign in',
+      path: 'login',
+    },
+    {
+      name: 'Sign up',
+      path: 'register',
+    },
+  ];
 
   return (
     <main className={styles.main}>
       <header className={styles.header}>
         <nav className={styles.nav}>
           <h3>SECTIFY</h3>
-          <ul className="flex">
-            {nav.map((n, i) => (
+          <p className="flex items-center">
+            <Link href={'/login'} className="mx-4 md:mx-4 text-black">
+              Sign In
+            </Link>
+            <Button href={'/register'}>Sign Up</Button>
+            {/* {nav.map((n, i) => (
               <li key={i} className="mx-2 md:mx-4 text-black">
-                {n}
+                {n.name}
               </li>
-            ))}
-          </ul>
+            ))} */}
+          </p>
         </nav>
       </header>
       <section className="text-center text-white">
