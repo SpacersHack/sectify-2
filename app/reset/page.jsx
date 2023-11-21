@@ -27,7 +27,7 @@ const Reset = () => {
             type={'email'}
             name={'email'}
           />
-          <Button href={''} css={'my-3'}>
+          <Button href={'/verify'} css={'my-3'}>
             Send code
           </Button>
         </form>
