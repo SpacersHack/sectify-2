@@ -1,15 +1,16 @@
 import Link from 'next/link';
-import Button from '../component/button';
-import SectifyInput from '../component/input';
-import styles from './login.module.css';
-import AuthHeader from '../component/auth/header';
+
+import styles from './register.module.css';
+import AuthHeader from '@/app/component/auth/header';
+import SectifyInput from '@/app/component/input';
+import Button from '@/app/component/button';
 
 const Login = () => {
   return (
     <main className={styles.main}>
       <section className="border px-4 md:px-8 py-10 rounded-lg bg-white w-full md:w-[500px]">
         <AuthHeader
-          title={'Sign in to cast your vote for who you believe in!'}
+          title={'Sign up to cast your vote for who you believe in!'}
           description={''}
         />
         <form action="" className="w-full mt-6">
@@ -18,6 +19,12 @@ const Login = () => {
             placeholder={'Enter full name'}
             type={'text'}
             name={'fullname'}
+          />
+          <SectifyInput
+            title="Vin"
+            placeholder={'Enter Vin'}
+            type={'text'}
+            name={'vin'}
           />
           <SectifyInput
             title="Email address"
@@ -31,20 +38,21 @@ const Login = () => {
             type={'password'}
             name={'password'}
           />
-          <Link
-            href={'/reset'}
-            className="flex justify-end text-sm text-sectify"
-          >
-            Forgot Password?
-          </Link>
+
           <Button href={''} css={'my-3'}>
-            Sign in
+            Sign up
           </Button>
           <p className="text-center">
-            Dont have an account ?{' '}
-            <Link href={'/register'} className="text-sectify">
-              sign up
+            Already have an account ?{' '}
+            <Link href="/auth/login" className="text-sectify">
+              sign in
             </Link>
+          </p>
+          <p className="text-center text-sm my-4">
+            By signing up you accept our{' '}
+            <span className="text-sectify inline-block">
+              terms and condition & private policy
+            </span>
           </p>
         </form>
       </section>

@@ -1,7 +1,8 @@
-import Button from '../component/button';
+import AuthHeader from '@/app/component/auth/header';
+
 import styles from './verify.module.css';
-import Otp from './Otp';
-import AuthHeader from '../component/auth/header';
+import OtpComponent from './Otp';
+import Button from '@/app/component/button';
 
 const Verify = () => {
   return (
@@ -14,8 +15,8 @@ const Verify = () => {
           }
         />
         <form action="" className="w-full mt-6">
-          <Otp />
-          <Button href={'/passwordReset'} css={'my-3'}>
+          <OtpComponent />
+          <Button href={'/auth/passwordReset'} css={'my-3'}>
             Verify
           </Button>
           <p className="text-center text-sm my-4">

@@ -1,9 +1,8 @@
 import React from 'react';
-import SectifyInput from '../component/input';
-import Button from '../component/button';
-import Link from 'next/link';
 import styles from './reset.module.css';
-import AuthHeader from '../component/auth/header';
+import AuthHeader from '@/app/component/auth/header';
+import SectifyInput from '@/app/component/input';
+import Button from '@/app/component/button';
 const Reset = () => {
   return (
     <main className={styles.main}>
@@ -27,7 +26,7 @@ const Reset = () => {
             type={'email'}
             name={'email'}
           />
-          <Button href={'/verify'} css={'my-3'}>
+          <Button href={'/auth/verify'} css={'my-3'}>
             Send code
           </Button>
         </form>

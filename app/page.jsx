@@ -20,10 +20,10 @@ export default function Landing() {
         <nav className={styles.nav}>
           <h3>SECTIFY</h3>
           <p className="flex items-center">
-            <Link href={'/login'} className="mx-4 md:mx-4 text-black">
+            <Link href={'/auth/login'} className="mx-4 md:mx-4 text-black">
               Sign In
             </Link>
-            <Button href={'/register'}>Sign Up</Button>
+            <Button href={'/auth/register'}>Sign Up</Button>
             {/* {nav.map((n, i) => (
               <li key={i} className="mx-2 md:mx-4 text-black">
                 {n.name}
@@ -42,7 +42,7 @@ export default function Landing() {
           empowering you to shape the future you desire
         </p>
         <p>
-          <Button href={'/login'} css={'py-3 inline-block'}>
+          <Button href={'/auth/login'} css={'py-3 inline-block'}>
             Get started
           </Button>
         </p>
