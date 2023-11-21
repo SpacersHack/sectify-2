@@ -20,7 +20,7 @@ const OtpComponent = () => {
       renderSeparator={<span></span>}
       renderInput={(props) => {
         console.log(props);
-        return <input {...props} style={{ minWidth: '0.8rem' }} />;
+        return <input {...props} style={{ minWidth: '0.5rem' }} />;
       }}
     />
   );
