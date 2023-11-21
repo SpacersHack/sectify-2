@@ -15,7 +15,7 @@ const OtpComponent = () => {
       numInputs={5}
       containerStyle={'justify-between my-14'}
       inputStyle={
-        'border rounded-md border-gray-400 p-2 px-4 md:p-3 md:px-8 mx-1 text-black bg-white'
+        'border rounded-md border-gray-400 p-2 px-3 md:p-3 md:px-8 mx-[0.5px] md:mx-1 text-black bg-white'
       }
       renderSeparator={<span></span>}
       renderInput={(props) => {
