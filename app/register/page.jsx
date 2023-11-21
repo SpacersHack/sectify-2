@@ -2,17 +2,16 @@ import Link from 'next/link';
 import Button from '../component/button';
 import SectifyInput from '../component/input';
 import styles from './register.module.css';
+import AuthHeader from '../component/auth/header';
 
 const Login = () => {
   return (
     <main className={styles.main}>
       <section className="border px-4 md:px-8 py-10 rounded-lg bg-white w-full md:w-[500px]">
-        <aside className="text-center">
-          <h3 className="my-3 text-xl font-semibold">SECTIFY</h3>
-          <p className="text-center">
-            Sign Up to cast your vote for who you believe in.{' '}
-          </p>
-        </aside>
+        <AuthHeader
+          title={'Sign up to cast your vote for who you believe in!'}
+          description={''}
+        />
         <form action="" className="w-full mt-6">
           <SectifyInput
             title="Full name"
