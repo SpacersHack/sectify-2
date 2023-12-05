@@ -1,8 +1,8 @@
-import AuthHeader from '@/app/component/auth/header';
-
 import styles from './verify.module.css';
 import OtpComponent from './Otp';
-import Button from '@/app/component/button';
+
+import Button from '../../component/button';
+import AuthHeader from '../../component/auth/header';
 
 const Verify = () => {
   return (

@@ -1,8 +1,10 @@
 import React from 'react';
 import styles from './reset.module.css';
-import AuthHeader from '@/app/component/auth/header';
-import SectifyInput from '@/app/component/input';
-import Button from '@/app/component/button';
+
+import AuthHeader from '../../component/auth/header';
+import Button from '../../component/button';
+import SectifyInput from '../../component/input';
+
 const Reset = () => {
   return (
     <main className={styles.main}>
