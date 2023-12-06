@@ -48,7 +48,7 @@ const VoterBio = () => {
               </span>
             </p>
             <div className="flex justify-end my-3">
-              <Button href={''}>
+              <Button href={'dashboard/poll'}>
                 <p>Start Voting</p>
               </Button>
             </div>
