@@ -10,11 +10,13 @@ const voter = {
 
 const VoterBio = () => {
   return (
-    <section className="bg-white rounded-lg py-6 px-6 my-6">
+    <section className="bg-white rounded-lg pt-4 md:py-6 px-6 my-6">
       <h4 className="mb-4">Voters information</h4>
-      <div className="flex items-center justify-between">
-        <aside className="bg-green-500 w-1/6 h-40 rounded-full mr-4"></aside>
-        <aside className="flex justify-between w-full">
+      <div className="md:flex items-center justify-between">
+        <aside className="h-40 w-40 md:w-1/6 md:h-40  mr-4 flex justify-center ">
+          <div className="w-full h-full bg-green-500 rounded-full"></div>
+        </aside>
+        <aside className="md:flex justify-between w-full my-10 md:my-0">
           <div>
             <p className="flex items-start my-3">
               <span className="inline-block mr-4 text-sm">Name :</span>
@@ -47,7 +49,7 @@ const VoterBio = () => {
                 (ABULE-EGBA/ABORU/MEIRAN/ ALAGBADO)
               </span>
             </p>
-            <div className="flex justify-end my-3">
+            <div className="md:flex justify-end my-3">
               <Button href={'dashboard/poll'}>
                 <p>Start Voting</p>
               </Button>
