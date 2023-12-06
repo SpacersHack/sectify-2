@@ -1,7 +1,12 @@
 import React from 'react';
+import VoterBio from '../component/voterBio';
 
 const Dashboard = () => {
-  return <div>Dashboard</div>;
+  return (
+    <article>
+      <VoterBio />
+    </article>
+  );
 };
 
 export default Dashboard;
