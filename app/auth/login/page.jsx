@@ -37,7 +37,7 @@ const Login = () => {
           >
             Forgot Password?
           </Link>
-          <Button href={''} css={'my-3'}>
+          <Button href={'/dashboard'} css={'my-3'}>
             Sign in
           </Button>
           <p className="text-center">
