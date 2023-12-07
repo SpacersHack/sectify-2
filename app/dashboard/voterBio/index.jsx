@@ -1,4 +1,4 @@
-import Button from '../button';
+import Button from '../../component/button';
 
 const voter = {
   name: 'JOHN DOE IFEDOLA',
@@ -19,31 +19,43 @@ const VoterBio = () => {
         <aside className="md:flex justify-between w-full my-10 md:my-0">
           <div>
             <p className="flex items-start my-3">
-              <span className="inline-block mr-4 text-sm">Name :</span>
+              <span className="inline-block mr-4 text-sm text-[#858383] uppercase">
+                Name :
+              </span>
               <span className="text-sm capitalize text-right ">
                 {voter.name}
               </span>
             </p>
             <p className="flex items-start my-3">
-              <span className="inline-block mr-4 text-sm">VIN :</span>
+              <span className="inline-block mr-4 text-sm text-[#858383] uppercase">
+                VIN :
+              </span>
               <span className="text-sm text-right ">{voter.vin}</span>
             </p>
             <p className="flex items-start my-3">
-              <span className="inline-block mr-4 text-sm">D.O.B :</span>
+              <span className="inline-block mr-4 text-sm text-[#858383] uppercase">
+                D.O.B :
+              </span>
               <span className="text-sm text-right ">{voter.dob}</span>
             </p>
             <p className="flex items-start my-3">
-              <span className="inline-block mr-4 text-sm">OCCUPATION :</span>
+              <span className="inline-block mr-4 text-sm text-[#858383] uppercase">
+                OCCUPATION :
+              </span>
               <span className="text-sm text-right ">{voter.occupation}</span>
             </p>
             <p className="flex items-start my-3">
-              <span className="inline-block mr-4 text-sm">ADDRESS :</span>
+              <span className="inline-block mr-4 text-sm text-[#858383] uppercase">
+                ADDRESS :
+              </span>
               <span className="text-sm text-right ">{voter.address}</span>
             </p>
           </div>
           <div className="flex flex-col justify-between">
             <p className="flex items-start my-3">
-              <span className="inline-block mr-4 text-sm">DELIM :</span>
+              <span className="inline-block mr-4 text-sm text-[#858383] uppercase">
+                DELIM :
+              </span>
               <span className="text-sm">
                 LAGOS | ALIMOSHO <br />
                 (ABULE-EGBA/ABORU/MEIRAN/ ALAGBADO)
