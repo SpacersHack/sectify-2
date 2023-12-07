@@ -87,7 +87,7 @@ const NavElements = () => {
       </section>
       {!isVisible && (
         <p
-          className="absolute text-[#009947] cursor-pointer p-4 bg-white rounded-full top-1/4 -translate-y-1/4 animate-bounce shadow-lg"
+          className="fixed text-[#009947] cursor-pointer p-4 bg-white rounded-full top-1/4 -translate-y-1/4 animate-bounce shadow-lg"
           onClick={handleVisibility}
         >
           <span className="block">
