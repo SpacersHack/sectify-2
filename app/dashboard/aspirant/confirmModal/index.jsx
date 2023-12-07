@@ -7,7 +7,7 @@ const ConfirmModal = ({ name, handleModalClose }) => {
     handleModalClose();
   };
   return (
-    <section className="px-10 text-sm uppercase text-center">
+    <section className=" px-4 md:px-10 text-sm uppercase text-center">
       <h4>Notice</h4>
       <p className="text-gray-700 text-center my-6">
         You can vote for just one aspirant in this division. Is{' '}
