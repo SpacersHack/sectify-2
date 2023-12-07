@@ -39,7 +39,7 @@ const NavElements = () => {
     <>
       <section
         className={cls(
-          'w-3/6 md:w-1/6 bg-white h-full',
+          'w-5/6 md:w-1/6 bg-white h-full',
           !isVisible ? 'hidden' : 'block'
         )}
       >
