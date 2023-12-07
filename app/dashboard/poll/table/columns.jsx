@@ -64,19 +64,19 @@ export const COLUMNS = [
     accessor: 'status',
     Cell: ({ value }) => {
       switch (value) {
-        case 1:
+        case 'coming':
           return (
             <p className="text-[#BFA24C] bg-[#FFF9E5] text-center  py-1 rounded-md text-sm">
               Up coming
             </p>
           );
-        case 0:
+        case 'progress':
           return (
             <p className="text-[#22A57E] bg-[#F2FCF9] text-center  py-1 rounded-md text-sm">
               In progress
             </p>
           );
-        case -1:
+        case 'completed':
           return (
             <p className="text-[#B21015] bg-[#FEF1F1] text-center  py-1 rounded-md text-sm">
               Completed

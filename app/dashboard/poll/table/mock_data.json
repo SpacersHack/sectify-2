@@ -4,7 +4,7 @@
     "category": "presidential",
     "registeredVoters": 3200000,
     "totalVote": 2534567,
-    "status": 0,
+    "status": "progress",
     "startDate": "11th of Dec",
     "endDate": "13th of Jan"
   },
@@ -13,7 +13,7 @@
     "category": "Gubernatorial",
     "registeredVoters": "",
     "totalVote": "",
-    "status": -1,
+    "status": "completed",
     "startDate": "12th of Jan",
     "endDate": "12th of Feb"
   },
@@ -22,7 +22,7 @@
     "category": "House of rep",
     "registeredVoters": "",
     "totalVote": "",
-    "status": 1,
+    "status": "progress",
     "startDate": "12th of Jan",
     "endDate": "12th of Feb"
   },
@@ -31,7 +31,7 @@
     "category": "House of assembly",
     "registeredVoters": "",
     "totalVote": "",
-    "status": 1,
+    "status": "coming",
     "startDate": "12th of Jan",
     "endDate": "12th of Feb"
   },
@@ -40,7 +40,34 @@
     "category": "Senatorial",
     "registeredVoters": "",
     "totalVote": "",
-    "status": 1,
+    "status": "progress",
+    "startDate": "12th of Jan",
+    "endDate": "12th of Feb"
+  },
+  {
+    "id": 191,
+    "category": "Local Government",
+    "registeredVoters": "",
+    "totalVote": "",
+    "status": "coming",
+    "startDate": "12th of Jan",
+    "endDate": "12th of Feb"
+  },
+  {
+    "id": 191,
+    "category": "Local Government",
+    "registeredVoters": "",
+    "totalVote": "",
+    "status": "coming",
+    "startDate": "12th of Jan",
+    "endDate": "12th of Feb"
+  },
+  {
+    "id": 191,
+    "category": "Local Government",
+    "registeredVoters": "",
+    "totalVote": "",
+    "status": "completed",
     "startDate": "12th of Jan",
     "endDate": "12th of Feb"
   }
