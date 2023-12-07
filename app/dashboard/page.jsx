@@ -1,6 +1,7 @@
 import React from 'react';
 import VoterBio from './voterBio';
 import ProgressCard from './progressCard';
+import BarChartPoll from './barChart';
 
 const presidentCandidate = [
   {
@@ -38,6 +39,7 @@ const Dashboard = () => {
           manner={'by vote'}
           candidates={presidentCandidate}
         />
+        {/* <BarChartPoll /> */}
         <ProgressCard
           title={'Top 4 Lagos Gubernatorial candidate 2023'}
           manner={'by vote'}
