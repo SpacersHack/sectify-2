@@ -7,21 +7,25 @@ const presidentCandidate = [
     name: 'Bola Tinubu',
     stat: '700',
     percent: '40',
+    bg: 'green',
   },
   {
     name: 'Peter Obi',
     stat: '500',
     percent: '20',
+    bg: 'red',
   },
   {
     name: 'Sowore Omoyele',
     stat: '800',
     percent: '10',
+    bg: 'brown',
   },
   {
     name: 'Imumolen Chistopher',
     stat: '300',
     percent: '2',
+    bg: 'grey',
   },
 ];
 const Dashboard = () => {

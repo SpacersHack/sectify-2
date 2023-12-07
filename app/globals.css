@@ -25,3 +25,23 @@ body {
     )
     rgb(var(--background-start-rgb));
 } */
+
+.bg-red {
+  background-color: #e52b32;
+}
+
+.bg-green {
+  background-color: #069347;
+}
+
+.bg-brown {
+  background-color: #3c2213;
+}
+
+.bg-grey {
+  background-color: #2d4f1d;
+}
+
+.bg-blue {
+  background-color: #52c2e8;
+}

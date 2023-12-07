@@ -1,4 +1,5 @@
 import Button from '../../component/button';
+import VoterDetail from './detail';
 
 const voter = {
   name: 'JOHN DOE IFEDOLA',
@@ -6,6 +7,7 @@ const voter = {
   dob: '12-03-1980',
   occupation: 'Graphic designer',
   address: '4140 Parker Rd. Allentown, New Mexico ',
+  delim: 'LAGOS | ALIMOSHO',
 };
 
 const VoterBio = () => {
@@ -18,49 +20,15 @@ const VoterBio = () => {
         </aside>
         <aside className="md:flex justify-between w-full my-10 md:my-0">
           <div>
-            <p className="flex items-start my-3">
-              <span className="inline-block mr-4 text-sm text-[#858383] uppercase">
-                Name :
-              </span>
-              <span className="text-sm capitalize text-right ">
-                {voter.name}
-              </span>
-            </p>
-            <p className="flex items-start my-3">
-              <span className="inline-block mr-4 text-sm text-[#858383] uppercase">
-                VIN :
-              </span>
-              <span className="text-sm text-right ">{voter.vin}</span>
-            </p>
-            <p className="flex items-start my-3">
-              <span className="inline-block mr-4 text-sm text-[#858383] uppercase">
-                D.O.B :
-              </span>
-              <span className="text-sm text-right ">{voter.dob}</span>
-            </p>
-            <p className="flex items-start my-3">
-              <span className="inline-block mr-4 text-sm text-[#858383] uppercase">
-                OCCUPATION :
-              </span>
-              <span className="text-sm text-right ">{voter.occupation}</span>
-            </p>
-            <p className="flex items-start my-3">
-              <span className="inline-block mr-4 text-sm text-[#858383] uppercase">
-                ADDRESS :
-              </span>
-              <span className="text-sm text-right ">{voter.address}</span>
-            </p>
+            <VoterDetail title={'Name'} text={voter.name} />
+            <VoterDetail title={'VIN'} text={voter.vin} />
+            <VoterDetail title={'D.O.B'} text={voter.dob} />
+            <VoterDetail title={'Occupation'} text={voter.occupation} />
+            <VoterDetail title={'address'} text={voter.address} />
           </div>
           <div className="flex flex-col justify-between">
-            <p className="flex items-start my-3">
-              <span className="inline-block mr-4 text-sm text-[#858383] uppercase">
-                DELIM :
-              </span>
-              <span className="text-sm">
-                LAGOS | ALIMOSHO <br />
-                (ABULE-EGBA/ABORU/MEIRAN/ ALAGBADO)
-              </span>
-            </p>
+            <VoterDetail title={'delim'} text={voter.delim} />
+
             <div className="md:flex justify-end my-3">
               <Button href={'dashboard/poll'}>
                 <p>Start Voting</p>
