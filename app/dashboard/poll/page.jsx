@@ -1,4 +1,3 @@
-import React from 'react';
 import PollTable from './table';
 const Poll = () => {
   return (

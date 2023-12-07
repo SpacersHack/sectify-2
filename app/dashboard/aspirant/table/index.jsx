@@ -23,7 +23,6 @@ const AspirantTable = () => {
     rows,
     prepareRow,
     state,
-    // pagination
     gotoPage,
     pageCount,
     setPageSize,
@@ -33,21 +32,16 @@ const AspirantTable = () => {
     canPreviousPage,
     pageOptions,
     page,
-    // global filter
     setGlobalFilter,
-    //row selection
     selectedFlatRows,
   } = useTable(
     {
       columns,
       data,
     },
-    // global filter
     useFilters,
     useGlobalFilter,
-    //pagination
     usePagination,
-    //row select
     useRowSelect,
     (hooks) => {
       hooks.visibleColumns.push((columns) => [
