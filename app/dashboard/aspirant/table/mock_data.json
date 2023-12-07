@@ -1,0 +1,68 @@
+[
+  {
+    "id": 1,
+    "aspirant": "Bola Tinubu",
+    "politicalParty": "All Progressive Congress (APC)",
+    "logo": 2534567
+  },
+  {
+    "id": 2,
+    "aspirant": "Professor Peter Umeadi",
+    "politicalParty": "Accord Party (AP)",
+    "logo": ""
+  },
+  {
+    "id": 3,
+    "aspirant": "Sowore Omoyele",
+    "politicalParty": "Peoples Democratic Party (PDP)",
+    "logo": ""
+  },
+  {
+    "id": 4,
+    "aspirant": "Peter Obi",
+    "politicalParty": "Labour Party (LP) ",
+    "logo": ""
+  },
+  {
+    "id": 5,
+    "aspirant": "Rabiu Musa Kwankwaso",
+    "politicalParty": "All Progressives Grand Alliance (APGA)",
+    "logo": ""
+  },
+  {
+    "id": 6,
+    "aspirant": "Nwanyanwu Daniel",
+    "politicalParty": "African Action Congress (AAC)",
+    "logo": ""
+  },
+  {
+    "id": 7,
+    "aspirant": "Imumolen Christopher",
+    "politicalParty": "Action Alliance (AA)",
+    "logo": ""
+  },
+  {
+    "id": 8,
+    "aspirant": "Dumebi Kachikwu",
+    "politicalParty": "Zenith Labour Party (ZLP)",
+    "logo": ""
+  },
+  {
+    "id": 9,
+    "aspirant": "Local Government",
+    "politicalParty": "",
+    "logo": ""
+  },
+  {
+    "id": 10,
+    "aspirant": "Local Government",
+    "politicalParty": "",
+    "logo": ""
+  },
+  {
+    "id": 11,
+    "aspirant": "Local Government",
+    "politicalParty": "",
+    "logo": ""
+  }
+]

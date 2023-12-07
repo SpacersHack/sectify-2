@@ -1,6 +1,6 @@
 [
   {
-    "id": 188,
+    "id": 1,
     "category": "presidential",
     "registeredVoters": 3200000,
     "totalVote": 2534567,
@@ -9,7 +9,7 @@
     "endDate": "13th of Jan"
   },
   {
-    "id": 189,
+    "id": 2,
     "category": "Gubernatorial",
     "registeredVoters": "",
     "totalVote": "",
@@ -18,7 +18,7 @@
     "endDate": "12th of Feb"
   },
   {
-    "id": 190,
+    "id": 3,
     "category": "House of rep",
     "registeredVoters": "",
     "totalVote": "",
@@ -27,7 +27,7 @@
     "endDate": "12th of Feb"
   },
   {
-    "id": 191,
+    "id": 4,
     "category": "House of assembly",
     "registeredVoters": "",
     "totalVote": "",
@@ -36,7 +36,7 @@
     "endDate": "12th of Feb"
   },
   {
-    "id": 191,
+    "id": 5,
     "category": "Senatorial",
     "registeredVoters": "",
     "totalVote": "",
@@ -45,7 +45,7 @@
     "endDate": "12th of Feb"
   },
   {
-    "id": 191,
+    "id": 6,
     "category": "Local Government",
     "registeredVoters": "",
     "totalVote": "",
@@ -54,7 +54,7 @@
     "endDate": "12th of Feb"
   },
   {
-    "id": 191,
+    "id": 7,
     "category": "Local Government",
     "registeredVoters": "",
     "totalVote": "",
@@ -63,7 +63,34 @@
     "endDate": "12th of Feb"
   },
   {
-    "id": 191,
+    "id": 8,
+    "category": "Local Government",
+    "registeredVoters": "",
+    "totalVote": "",
+    "status": "completed",
+    "startDate": "12th of Jan",
+    "endDate": "12th of Feb"
+  },
+  {
+    "id": 9,
+    "category": "Local Government",
+    "registeredVoters": "",
+    "totalVote": "",
+    "status": "completed",
+    "startDate": "12th of Jan",
+    "endDate": "12th of Feb"
+  },
+  {
+    "id": 10,
+    "category": "Local Government",
+    "registeredVoters": "",
+    "totalVote": "",
+    "status": "completed",
+    "startDate": "12th of Jan",
+    "endDate": "12th of Feb"
+  },
+  {
+    "id": 11,
     "category": "Local Government",
     "registeredVoters": "",
     "totalVote": "",

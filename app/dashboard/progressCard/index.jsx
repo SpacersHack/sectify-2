@@ -5,7 +5,7 @@ const ProgressCard = ({ title, manner, candidates }) => {
     <aside className="bg-white py-6 px-3 w-full rounded-lg my-4 lg:my-0">
       <h4 className="font-bold">
         {title}
-        <span className="text-sm"> ({manner})</span>
+        <span className="text-sm"> {manner}</span>
       </h4>
       {candidates.map((candidate, id) => {
         const randId = Math.floor(Math.random() * 100) + 1;

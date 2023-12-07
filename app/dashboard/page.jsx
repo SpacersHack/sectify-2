@@ -53,8 +53,8 @@ const Dashboard = () => {
           candidates={presidentCandidate}
         />
         <ProgressCard
-          title={'Top 4 Lagos Gubernatorial candidate 2023'}
-          manner={'by vote'}
+          title={'Top 4 Alimosho House of rep candidate 2023'}
+          manner={''}
           candidates={presidentCandidate}
         />
       </section>

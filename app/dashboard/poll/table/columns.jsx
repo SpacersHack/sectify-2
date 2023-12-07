@@ -1,6 +1,15 @@
 // import format from "date-fns/format";
 // import ColumnFilter from './ColumnFilter';
+
 export const COLUMNS = [
+  {
+    Header: 'Id',
+    Footer: 'name',
+    accessor: 'id',
+    Cell: ({ value }) => {
+      return <p className="text-sm text-[#606060] text-left">{value}</p>;
+    },
+  },
   {
     Header: 'Category',
     Footer: 'name',
@@ -72,7 +81,10 @@ export const COLUMNS = [
           );
         case 'progress':
           return (
-            <p className="text-[#22A57E] bg-[#F2FCF9] text-center  py-1 rounded-md text-sm">
+            <p
+              className="text-[#22A57E] bg-[#F2FCF9] text-center  py-1 rounded-md text-sm cursor-pointer"
+              onClick={() => window.location.replace('/dashboard/aspirant')}
+            >
               In progress
             </p>
           );
