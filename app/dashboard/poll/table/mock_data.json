@@ -1,0 +1,47 @@
+[
+  {
+    "id": 188,
+    "category": "presidential",
+    "registeredVoters": 3200000,
+    "totalVote": 2534567,
+    "status": 0,
+    "startDate": "11th of Dec",
+    "endDate": "13th of Jan"
+  },
+  {
+    "id": 189,
+    "category": "Gubernatorial",
+    "registeredVoters": "",
+    "totalVote": "",
+    "status": -1,
+    "startDate": "12th of Jan",
+    "endDate": "12th of Feb"
+  },
+  {
+    "id": 190,
+    "category": "House of rep",
+    "registeredVoters": "",
+    "totalVote": "",
+    "status": 1,
+    "startDate": "12th of Jan",
+    "endDate": "12th of Feb"
+  },
+  {
+    "id": 191,
+    "category": "House of assembly",
+    "registeredVoters": "",
+    "totalVote": "",
+    "status": 1,
+    "startDate": "12th of Jan",
+    "endDate": "12th of Feb"
+  },
+  {
+    "id": 191,
+    "category": "Senatorial",
+    "registeredVoters": "",
+    "totalVote": "",
+    "status": 1,
+    "startDate": "12th of Jan",
+    "endDate": "12th of Feb"
+  }
+]

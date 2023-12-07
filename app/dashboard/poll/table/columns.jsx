@@ -2,43 +2,90 @@
 // import ColumnFilter from './ColumnFilter';
 export const COLUMNS = [
   {
-    Header: '',
-    Footer: '',
-    accessor: 'catImage',
+    Header: 'Category',
+    Footer: 'name',
+    accessor: 'category',
     Cell: ({ value }) => {
-      return <p className="bg-gray-200 w-6 h-6 mx-auto rounded-full"></p>;
+      return <p className="text-sm text-[#606060] text-left">{value}</p>;
     },
-    // Filter : ColumnFilter
+  },
+
+  {
+    Header: 'Registered Voters',
+    Footer: 'Description',
+    accessor: 'registeredVoters',
+    Cell: ({ value }) => {
+      return (
+        <p className="text-sm text-[#606060] ">
+          {value ? new Intl.NumberFormat().format(value) : '----------'}
+        </p>
+      );
+    },
+  },
+  {
+    Header: 'Total Vote',
+    Footer: '',
+    accessor: 'totalVote',
+    Cell: ({ value }) => {
+      return (
+        <p className="text-sm text-[#606060] ">
+          {value ? new Intl.NumberFormat().format(value) : '----------'}
+        </p>
+      );
+    },
+  },
+  {
+    Header: 'start date',
+    accessor: 'startDate',
+    Cell: ({ value }) => {
+      return (
+        <p className="text-sm text-[#606060] ">
+          {value ? value : '----------'}
+        </p>
+      );
+    },
+  },
+  {
+    Header: 'end date',
+    accessor: 'endDate',
+    Cell: ({ value }) => {
+      return (
+        <p className="text-sm text-[#606060] ">
+          {value ? value : '----------'}
+        </p>
+      );
+    },
   },
   {
     //Table hooks up to the id to figure out what to render
-    Header: 'Id',
-    Footer: 'Id',
+    Header: 'status',
+    Footer: 'status',
     //Accessor connects body to header
-    accessor: 'id',
-    // Filter: ColumnFilter,
-    // to Disable filtering for a field
-    disableFilters: true,
-  },
-  {
-    Header: 'Name',
-    Footer: 'name',
-    accessor: 'name',
-    // Filter: ColumnFilter,
-  },
-
-  {
-    Header: 'Description',
-    Footer: 'Description',
-    accessor: 'details',
-    // controls what is rendered on ui
-    // this is how changes are made on the table value
-    // Cell : ({value}) => {return format(new Date(value),'dd/MM/yyyy')},
-    // Cell: ({ value }) => {
-    //   return `${value}.`;
-    // },
-
-    // Filter : ColumnFilter
+    accessor: 'status',
+    Cell: ({ value }) => {
+      switch (value) {
+        case 1:
+          return (
+            <p className="text-[#BFA24C] bg-[#FFF9E5] text-center  py-1 rounded-md text-sm">
+              Up coming
+            </p>
+          );
+        case 0:
+          return (
+            <p className="text-[#22A57E] bg-[#F2FCF9] text-center  py-1 rounded-md text-sm">
+              In progress
+            </p>
+          );
+        case -1:
+          return (
+            <p className="text-[#B21015] bg-[#FEF1F1] text-center  py-1 rounded-md text-sm">
+              Completed
+            </p>
+          );
+        default:
+          return <p onClick={() => console.log(value)}> Up comings</p>;
+      }
+    },
   },
   // {
   //   Header: 'Actions',
@@ -47,17 +94,5 @@ export const COLUMNS = [
   //   Cell: ({ value }) => {
   //     return <p onClick={() => console.log(value)}>hi</p>;
   //   },
-  // },
-  // {
-  //   Header: 'Country',
-  //   Footer: 'Country',
-  //   accessor: 'country',
-  //   // Filter : ColumnFilter
-  // },
-  // {
-  //   Header: 'Phone',
-  //   Footer: 'Phone',
-  //   accessor: 'phone',
-  //   // Filter : ColumnFilter
-  // },
+  // }
 ];

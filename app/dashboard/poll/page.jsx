@@ -2,8 +2,8 @@ import React from 'react';
 import PollTable from './table';
 const Poll = () => {
   return (
-    <section>
-      <h4 className="font-semibold">All poll</h4>
+    <section className="w-[800px] md:w-full">
+      <h4 className="font-semibold my-6">All poll</h4>
       <aside>
         <PollTable />
       </aside>
