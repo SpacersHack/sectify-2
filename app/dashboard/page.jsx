@@ -5,25 +5,25 @@ import ProgressCard from './progressCard';
 const presidentCandidate = [
   {
     name: 'Bola Tinubu',
-    stat: '700',
+    stat: '4700',
     percent: '40',
     bg: 'green',
   },
   {
     name: 'Peter Obi',
-    stat: '500',
+    stat: '58900',
     percent: '20',
     bg: 'red',
   },
   {
     name: 'Sowore Omoyele',
-    stat: '800',
+    stat: '23050',
     percent: '10',
     bg: 'brown',
   },
   {
     name: 'Imumolen Chistopher',
-    stat: '300',
+    stat: '4323000',
     percent: '2',
     bg: 'grey',
   },

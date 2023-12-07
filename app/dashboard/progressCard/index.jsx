@@ -13,17 +13,17 @@ const ProgressCard = ({ title, manner, candidates }) => {
           <article key={id} className="flex justify-between items-center my-6">
             <p className="w-[300px] ">{candidate.name}</p>
             <div className=" w-full ml-2">
-              <p className="w-full bg-transparent rounded-full overflow-hidden text-sectify-700 flex items-center">
+              <p className="w-full  bg-transparent rounded-full overflow-hidden text-sectify-700 flex items-center">
                 <span
-                  className={cls(
-                    `rounded-full block py-1 px-4 mr-3`,
-                    `bg-${[candidate.bg]}`
-                  )}
                   style={{
                     width: `${randId}%`,
                   }}
+                  className={cls(
+                    `rounded-full block py-1 px-6 mr-3 min-w-[100px]`,
+                    `bg-${[candidate.bg]}`
+                  )}
                 >
-                  {candidate.stat}
+                  {new Intl.NumberFormat().format(candidate.stat)}
                 </span>
                 <span className="text-black inline-block">{randId}%</span>
               </p>
