@@ -1,18 +1,20 @@
 import React from 'react';
 
-const ConfirmModal = ({ name, handleModalClose }) => {
-  const handleVote = () => {};
-
+const ConfirmModal = ({ name, handleModalClose, handleConfirm }) => {
   const closeModal = () => {
     handleModalClose();
   };
   return (
     <section className=" px-4 md:px-10 text-sm uppercase text-center">
       <h4>Notice</h4>
-      <p className="text-gray-700 text-center my-6">
-        You can vote for just one aspirant in this division. Is{' '}
-        <span className="font-semibold">{name}</span> your preferred Aspirant?
-      </p>
+      <div className="text-gray-700 text-center my-6">
+        You can vote for just one aspirant in this division.
+        <p>
+          Is
+          <span className="font-semibold"> {name}</span> your preferred
+          Aspirant?
+        </p>
+      </div>
 
       <section className="flex justify-between items-center gap-3">
         <p
@@ -23,7 +25,7 @@ const ConfirmModal = ({ name, handleModalClose }) => {
           Cancel
         </p>
         <p
-          onClick={handleVote}
+          onClick={handleConfirm}
           type="submit"
           className="w-2/3 bg-sectify text-white py-3 rounded-md capitalize my-6 text-center cursor-pointer"
         >

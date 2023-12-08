@@ -1,8 +1,5 @@
 'use client';
 import React, { useMemo, useState } from 'react';
-import Modal from '../../../component/modal';
-import ConfirmModal from '../confirmModal';
-import SuccessModal from '../successModal';
 
 import {
   useTable,
@@ -16,25 +13,14 @@ import { COLUMNS } from './columns';
 import './table.css';
 import MOCK_DATA from './mock_data.json';
 
-const AspirantTable = () => {
+const ResultTable = () => {
   const columns = useMemo(() => COLUMNS, []);
   const data = useMemo(() => MOCK_DATA, []);
   const [candidate, setCandidate] = useState({});
-  const [modalIsOpen, setModalIsOpen] = useState(false);
-  const [isConfirmed, setIsConfirmed] = useState(false);
 
   const handleCandidateSelect = (value) => {
     setCandidate(value);
     setModalIsOpen(true);
-  };
-
-  const handleModalClose = () => {
-    setModalIsOpen((prev) => false);
-    setIsConfirmed(false);
-  };
-
-  const handleConfirm = () => {
-    setIsConfirmed((prev) => !prev);
   };
 
   const {
@@ -225,24 +211,8 @@ const AspirantTable = () => {
           </aside>
         </article>
       </section>
-      {modalIsOpen && (
-        <Modal handleModal={handleModalClose}>
-          {!isConfirmed ? (
-            <ConfirmModal
-              name={candidate.aspirant}
-              handleModalClose={handleModalClose}
-              handleConfirm={handleConfirm}
-            />
-          ) : (
-            <SuccessModal
-              name={candidate.aspirant}
-              handleModalClose={handleModalClose}
-            />
-          )}
-        </Modal>
-      )}
     </>
   );
 };
 
-export default AspirantTable;
+export default ResultTable;

@@ -1,22 +1,19 @@
-import React from 'react';
+import ResultOverview from './overview';
+import ResultTable from './table';
 
 const Result = () => {
   return (
-    <section>
-      <article className="justify-between items-center gap-x-6 block md:flex">
-        <aside className="py-4 text-center bg-white rounded-lg px-4 h-[120px] my-5 md:my-0 md:w-1/3">
-          <h4 className="my-3">Registered voters in Nigeria</h4>
-          <p className="my-3 font-semibold">11, 111, 111</p>
-        </aside>
-        <aside className="py-4 text-center bg-white rounded-lg px-4 h-[120px] my-5 md:my-0 md:w-1/3">
-          <h4 className="my-3">Registered voters in Nigeria</h4>
-          <p className="my-3 font-semibold">11, 111, 111</p>
-        </aside>
-        <aside className="py-4 text-center bg-white rounded-lg px-4 h-[120px] my-5 md:my-0 md:w-1/3">
-          <h4 className="my-3">Registered voters in Nigeria</h4>
-          <p className="my-3 font-semibold">11, 111, 111</p>
-        </aside>
+    <section className="w-[800px] md:w-full md:px-6">
+      <h4 className="font-semibold my-6">All poll</h4>
+      <article className="justify-between items-center gap-x-6 block md:flex my-6">
+        <ResultOverview title={'Registered Voters'} text={'11, 111, 111'} />
+        <ResultOverview
+          title={'Registered Political Party'}
+          text={'11, 111, 111'}
+        />
+        <ResultOverview title={'Casted votes'} text={'11, 111, 111'} />
       </article>
+      <ResultTable />
     </section>
   );
 };
