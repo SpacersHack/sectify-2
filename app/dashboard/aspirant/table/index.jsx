@@ -22,6 +22,7 @@ const AspirantTable = () => {
   const [candidate, setCandidate] = useState({});
   const [modalIsOpen, setModalIsOpen] = useState(false);
   const [isConfirmed, setIsConfirmed] = useState(false);
+  const [hasVoted, setHasVoted] = useState(false);
 
   const handleCandidateSelect = (value) => {
     setCandidate(value);
@@ -80,15 +81,29 @@ const AspirantTable = () => {
             const values = row?.values;
 
             return (
-              <p
-                className="text-sm text-white flex justify-center items-center bg-sectify py-2 px-4 rounded-md cursor-pointer"
-                onClick={() => {
-                  handleCandidateSelect(values);
-                  console.log(values);
-                }}
-              >
-                <span>Vote</span>
-              </p>
+              <>
+                {hasVoted ? (
+                  <p
+                    className="text-sm text-white flex justify-center items-center bg-sectify py-2 px-4 rounded-md cursor-pointer"
+                    onClick={() => {
+                      handleCandidateSelect(values);
+                      console.log(values);
+                    }}
+                  >
+                    <span>Voted</span>
+                  </p>
+                ) : (
+                  <p
+                    className="text-sm text-white flex justify-center items-center bg-sectify py-2 px-4 rounded-md cursor-pointer"
+                    onClick={() => {
+                      handleCandidateSelect(values);
+                      console.log(values);
+                    }}
+                  >
+                    <span>Vote</span>
+                  </p>
+                )}
+              </>
             );
           },
         },

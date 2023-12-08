@@ -19,7 +19,9 @@ export const COLUMNS = [
     Footer: '',
     accessor: 'logo',
     Cell: ({ value }) => {
-      return <p className="text-sm text-[#606060] text-left">{value}</p>;
+      return (
+        <p className="text-sm text-[#606060] text-left bg-gray-200 w-10 h-10"></p>
+      );
     },
   },
   {

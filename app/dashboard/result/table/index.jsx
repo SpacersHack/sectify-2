@@ -98,7 +98,7 @@ const ResultTable = () => {
                     <th
                       key={id}
                       {...column.getHeaderProps()}
-                      className="font-normal capitalize text-sm text-[#303030] text-left"
+                      className="font-semibold capitalize text-sm text-[#303030] text-left"
                     >
                       {' '}
                       {column.render('Header')}

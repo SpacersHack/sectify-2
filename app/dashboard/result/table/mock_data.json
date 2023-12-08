@@ -3,21 +3,21 @@
     "id": 1,
     "aspirant": "Bola Tinubu",
     "votes": 23456789,
-    "politicalParty": "All Progressive Congress (APC)",
+    "politicalParty": "Liberal Movement",
     "logo": 2534567
   },
   {
     "id": 2,
     "aspirant": "Professor Peter Umeadi",
     "votes": 3847682,
-    "politicalParty": "Accord Party (AP)",
+    "politicalParty": "National Libety Vanguard",
     "logo": ""
   },
   {
     "id": 3,
     "aspirant": "Sowore Omoyele",
     "votes": 45257283,
-    "politicalParty": "Peoples Democratic Party (PDP)",
+    "politicalParty": "The Group",
     "logo": ""
   },
   {
@@ -59,21 +59,21 @@
     "id": 9,
     "aspirant": "Local Government",
     "votes": 3574853562,
-    "politicalParty": "",
+    "politicalParty": "Labour Party (LP) ",
     "logo": ""
   },
   {
     "id": 10,
     "aspirant": "Local Government",
     "votes": 546838393,
-    "politicalParty": "",
+    "politicalParty": "Peoples Democratic Party (PDP)",
     "logo": ""
   },
   {
     "id": 11,
     "aspirant": "Local Government",
     "votes": 4994379397,
-    "politicalParty": "",
+    "politicalParty": "All Progressive Congress (APC)",
     "logo": ""
   }
 ]

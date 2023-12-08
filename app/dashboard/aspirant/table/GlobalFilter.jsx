@@ -30,7 +30,7 @@ const GlobalFilter = ({ filter, setFilter }) => {
       <input
         type="search"
         name="search"
-        className="w-full py-2 px-10 outline-none focus:outline-transparent cursor-pointer rounded-md border-none"
+        className="w-full py-2 px-10 outline-none focus:outline-transparent cursor-pointer rounded-md border-none lowercase"
         placeholder="search poll category, Aspirant..."
         value={value || ''}
         onChange={(e) => {

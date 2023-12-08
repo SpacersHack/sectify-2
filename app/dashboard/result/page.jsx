@@ -6,12 +6,9 @@ const Result = () => {
     <section className="w-[800px] md:w-full md:px-6">
       <h4 className="font-semibold my-6">All poll</h4>
       <article className="justify-between items-center gap-x-6 block md:flex my-6">
-        <ResultOverview title={'Registered Voters'} text={'11, 111, 111'} />
-        <ResultOverview
-          title={'Registered Political Party'}
-          text={'11, 111, 111'}
-        />
-        <ResultOverview title={'Casted votes'} text={'11, 111, 111'} />
+        <ResultOverview title={'Registered Voters'} text={'132, 111'} />
+        <ResultOverview title={'Registered Parties'} text={'100, 111'} />
+        <ResultOverview title={'Casted votes'} text={'98, 111'} />
       </article>
       <ResultTable />
     </section>

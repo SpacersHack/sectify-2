@@ -1,6 +1,6 @@
 import Button from '../../component/button';
 import VoterDetail from './detail';
-
+import Image from 'next/image';
 const voter = {
   name: 'JOHN DOE IFEDOLA',
   vin: '54F7 C4C9 3737 8896 432',
@@ -15,8 +15,16 @@ const VoterBio = () => {
     <section className="bg-white rounded-lg pt-4 md:py-6 px-6 my-6">
       <h4 className="mb-4">Voters information</h4>
       <div className="md:flex items-center justify-between">
-        <aside className="h-40 w-40 md:w-1/6 md:h-40  mr-4 flex justify-center ">
-          <div className="w-full h-full bg-green-500 rounded-full"></div>
+        <aside className="h-40 w-40 md:w-40 md:h-40  mr-4 flex justify-center ">
+          <div className="w-full h-full bg-green-500 rounded-full overflow-hidden">
+            <Image
+              alt=""
+              height={150}
+              width={150}
+              src={'/profile.jpg'}
+              className="w-full h-full"
+            />
+          </div>
         </aside>
         <aside className="md:flex justify-between w-full my-10 md:my-0">
           <div>
