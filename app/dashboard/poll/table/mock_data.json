@@ -55,7 +55,7 @@
   },
   {
     "id": 7,
-    "category": "Local Government",
+    "category": "Src 1",
     "registeredVoters": "",
     "totalVote": "",
     "status": "coming",
@@ -64,7 +64,7 @@
   },
   {
     "id": 8,
-    "category": "Local Government",
+    "category": "Src 2",
     "registeredVoters": "",
     "totalVote": "",
     "status": "completed",
@@ -73,7 +73,7 @@
   },
   {
     "id": 9,
-    "category": "Local Government",
+    "category": "Src 3",
     "registeredVoters": "",
     "totalVote": "",
     "status": "completed",
@@ -82,7 +82,7 @@
   },
   {
     "id": 10,
-    "category": "Local Government",
+    "category": "Src 4",
     "registeredVoters": "",
     "totalVote": "",
     "status": "completed",
