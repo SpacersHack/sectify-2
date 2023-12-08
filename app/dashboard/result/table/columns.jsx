@@ -29,4 +29,11 @@ export const COLUMNS = [
       return <p className="text-sm text-[#606060] text-left">{value}</p>;
     },
   },
+  {
+    Header: 'Votes %',
+    accessor: 'votes',
+    Cell: ({ value }) => {
+      return <p className="text-sm text-[#606060] text-left">{value}</p>;
+    },
+  },
 ];

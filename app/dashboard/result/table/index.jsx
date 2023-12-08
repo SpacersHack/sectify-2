@@ -57,27 +57,27 @@ const ResultTable = () => {
           Header: () => <p className="text-sm text-[#606060] text-left"></p>,
         },
         ...columns,
-        {
-          id: 'action',
-          Header: () => (
-            <p className="text-sm text-[#606060] text-left">Actions</p>
-          ),
-          Cell: ({ row }) => {
-            const values = row?.values;
+        // {
+        //   id: 'action',
+        //   Header: () => (
+        //     <p className="text-sm text-[#606060] text-left">Actions</p>
+        //   ),
+        //   Cell: ({ row }) => {
+        //     const values = row?.values;
 
-            return (
-              <p
-                className="text-sm text-white flex justify-center items-center bg-sectify py-2 px-4 rounded-md cursor-pointer"
-                onClick={() => {
-                  handleCandidateSelect(values);
-                  console.log(values);
-                }}
-              >
-                <span>Vote</span>
-              </p>
-            );
-          },
-        },
+        //     return (
+        //       <p
+        //         className="text-sm text-white flex justify-center items-center bg-sectify py-2 px-4 rounded-md cursor-pointer"
+        //         onClick={() => {
+        //           handleCandidateSelect(values);
+        //           console.log(values);
+        //         }}
+        //       >
+        //         <span>Vote</span>
+        //       </p>
+        //     );
+        //   },
+        // },
       ]);
     }
   );
