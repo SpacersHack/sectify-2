@@ -23,12 +23,7 @@ export default function Landing() {
             <Link href={'/auth/login'} className="mx-4 md:mx-4 text-black">
               Sign In
             </Link>
-            <Button href={'/auth/register'}>Sign Up</Button>
-            {/* {nav.map((n, i) => (
-              <li key={i} className="mx-2 md:mx-4 text-black">
-                {n.name}
-              </li>
-            ))} */}
+            <Button href={'/auth/connectWallet'}>Connect wallet</Button>
           </p>
         </nav>
       </header>
@@ -42,7 +37,7 @@ export default function Landing() {
           empowering you to shape the future you desire
         </p>
         <p>
-          <Button href={'/auth/login'} css={'py-3 inline-block'}>
+          <Button href={'/auth/connectWallet'} css={'py-3 inline-block'}>
             Get started
           </Button>
         </p>

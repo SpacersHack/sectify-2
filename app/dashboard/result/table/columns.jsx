@@ -33,7 +33,11 @@ export const COLUMNS = [
     Header: 'Votes %',
     accessor: 'votes',
     Cell: ({ value }) => {
-      return <p className="text-sm text-[#606060] text-left">{value}</p>;
+      return (
+        <p className="text-sm text-[#606060] text-left">
+          {new Intl.NumberFormat().format(value)}
+        </p>
+      );
     },
   },
 ];

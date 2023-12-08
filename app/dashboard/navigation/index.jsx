@@ -80,14 +80,17 @@ const NavElements = () => {
               </Link>
             ))}
           </ul>
-          <p className="pl-10 my-3 py-3 capitalize mb-10 text-sectify-red">
+          <Link
+            href={'/'}
+            className="pl-10 my-3 py-3 capitalize mb-10 text-sectify-red"
+          >
             Log out
-          </p>
+          </Link>
         </aside>
       </section>
       {!isVisible && (
         <p
-          className="fixed text-[#009947] cursor-pointer p-4 bg-white rounded-full top-1/4 -translate-y-1/4 animate-bounce shadow-lg"
+          className="fixed z-10 text-[#009947] cursor-pointer p-4 bg-white rounded-full top-1/4 -translate-y-1/4 animate-bounce shadow-lg"
           onClick={handleVisibility}
         >
           <span className="block">

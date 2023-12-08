@@ -2,67 +2,78 @@
   {
     "id": 1,
     "aspirant": "Bola Tinubu",
-    "votes": "All Progressive Congress (APC)",
+    "votes": 23456789,
+    "politicalParty": "All Progressive Congress (APC)",
     "logo": 2534567
   },
   {
     "id": 2,
     "aspirant": "Professor Peter Umeadi",
-    "votes": "Accord Party (AP)",
+    "votes": 3847682,
+    "politicalParty": "Accord Party (AP)",
     "logo": ""
   },
   {
     "id": 3,
     "aspirant": "Sowore Omoyele",
-    "votes": "Peoples Democratic Party (PDP)",
+    "votes": 45257283,
+    "politicalParty": "Peoples Democratic Party (PDP)",
     "logo": ""
   },
   {
     "id": 4,
     "aspirant": "Peter Obi",
-    "votes": "Labour Party (LP) ",
+    "votes": 98734568,
+    "politicalParty": "Labour Party (LP) ",
     "logo": ""
   },
   {
     "id": 5,
     "aspirant": "Rabiu Musa Kwankwaso",
-    "votes": "All Progressives Grand Alliance (APGA)",
+    "votes": 36638383,
+    "politicalParty": "All Progressives Grand Alliance (APGA)",
     "logo": ""
   },
   {
     "id": 6,
     "aspirant": "Nwanyanwu Daniel",
-    "votes": "African Action Congress (AAC)",
+    "votes": 927365372,
+    "politicalParty": "African Action Congress (AAC)",
     "logo": ""
   },
   {
     "id": 7,
     "aspirant": "Imumolen Christopher",
-    "votes": "Action Alliance (AA)",
+    "votes": 7635352623,
+    "politicalParty": "Action Alliance (AA)",
     "logo": ""
   },
   {
     "id": 8,
     "aspirant": "Dumebi Kachikwu",
-    "votes": "Zenith Labour Party (ZLP)",
+    "votes": 355268234,
+    "politicalParty": "Zenith Labour Party (ZLP)",
     "logo": ""
   },
   {
     "id": 9,
     "aspirant": "Local Government",
-    "votes": "",
+    "votes": 3574853562,
+    "politicalParty": "",
     "logo": ""
   },
   {
     "id": 10,
     "aspirant": "Local Government",
-    "votes": "",
+    "votes": 546838393,
+    "politicalParty": "",
     "logo": ""
   },
   {
     "id": 11,
     "aspirant": "Local Government",
-    "votes": "",
+    "votes": 4994379397,
+    "politicalParty": "",
     "logo": ""
   }
 ]
