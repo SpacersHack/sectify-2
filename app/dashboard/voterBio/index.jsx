@@ -21,7 +21,7 @@ const VoterBio = () => {
         <aside className="md:flex justify-between w-full my-10 md:my-0">
           <div>
             <VoterDetail title={'Name'} text={voter.name} />
-            <VoterDetail title={'VIN'} text={voter.vin} />
+            <VoterDetail title={'Matric'} text={voter.vin} />
             <VoterDetail title={'D.O.B'} text={voter.dob} />
             <VoterDetail title={'Occupation'} text={voter.occupation} />
             <VoterDetail title={'address'} text={voter.address} />
