@@ -1,5 +1,9 @@
 .main {
   @apply flex h-screen flex-col items-center justify-center  md:p-24  relative;
+  background-image: url('../public/home.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .main::after {
@@ -7,7 +11,7 @@
 }
 
 .header {
-  @apply absolute top-0 left-0 w-full px-2 md:px-28 py-8;
+  @apply absolute top-0 left-0 w-full px-2 md:px-28 py-8 z-10;
 }
 
 .nav {

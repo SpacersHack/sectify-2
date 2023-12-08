@@ -5,32 +5,42 @@ import styles from './nav.module.css';
 import { usePathname, useRouter } from 'next/navigation';
 import Link from 'next/link';
 
+import HomeIcon from '../../icons/homeIcon';
+import PollsIcon from '../../icons/pollsIcon';
+import AspirantIcon from '../../icons/aspirantIcon';
+import ResultIcon from '../../icons/resultIcon';
+import LogoutIcon from '../../icons/logoutIcon';
+
 const navigation = [
   {
     name: 'home',
     icon: '',
     route: '/dashboard',
+    icon: <HomeIcon />,
   },
   {
     name: 'poll',
     icon: '',
     route: '/dashboard/poll',
+    icon: <PollsIcon />,
   },
   {
     name: 'aspirant',
     icon: '',
     route: '/dashboard/aspirant',
+    icon: <AspirantIcon />,
   },
   {
     name: 'result',
     icon: '',
     route: '/dashboard/result',
+    icon: <ResultIcon />,
   },
 ];
 
 const NavElements = () => {
   const pathname = usePathname();
-  const [isVisible, setIsVisible] = useState(true);
+  const [isVisible, setIsVisible] = useState(false);
 
   const handleVisibility = () => {
     setIsVisible((prev) => !prev);
@@ -76,15 +86,20 @@ const NavElements = () => {
                   pathname === nav.route && `${styles.active} bg-[#F5F5F5]`
                 )}
               >
-                {nav.name}
+                <span>{nav.icon}</span>
+                <span className="mx-3 inline-block">{nav.name}</span>
               </Link>
             ))}
           </ul>
           <Link
             href={'/'}
-            className="pl-10 my-3 py-3 capitalize mb-10 text-sectify-red"
+            className="pl-10 my-3 py-3 capitalize mb-10 text-sectify-red flex items-center"
           >
-            Log out
+            {' '}
+            <span>
+              <LogoutIcon />
+            </span>
+            <span className="mx-3 inline-block">Log out</span>
           </Link>
         </aside>
       </section>

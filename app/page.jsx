@@ -27,7 +27,7 @@ export default function Landing() {
           </p>
         </nav>
       </header>
-      <section className="text-center text-white">
+      <section className="text-center text-white relative z-10">
         <h3 className="text-xl md:text-2xl">
           Unlock the power of your vote with SECTIFY
         </h3>
@@ -42,6 +42,7 @@ export default function Landing() {
           </Button>
         </p>
       </section>
+      <aside className="absolute w-screen h-screen top-0 left-0 bg-black opacity-60"></aside>
     </main>
   );
 }
