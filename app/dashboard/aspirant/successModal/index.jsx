@@ -1,8 +1,10 @@
 import Image from 'next/image';
-
+import { useRouter } from 'next/navigation';
 const SuccessModal = ({ name, handleModalClose }) => {
+  const router = useRouter();
   const closeModal = () => {
     handleModalClose();
+    router.push('/dashboard/result');
   };
   return (
     <section className=" px-4 md:px-10 text-sm uppercase text-center">
