@@ -14,9 +14,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <WagmiPage>
-        <body className={inter.className}>{children}</body>
-      </WagmiPage>
+      <body className={inter.className}>
+        <WagmiPage>{children}</WagmiPage>
+      </body>
     </html>
   );
 }
