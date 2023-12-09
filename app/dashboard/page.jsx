@@ -1,7 +1,8 @@
-import React from 'react';
+'use client';
+import React, { useEffect } from 'react';
 import VoterBio from './voterBio';
 import ProgressCard from './progressCard';
-import BarChartPoll from './barChart';
+import { ToastContainer, toast } from 'react-toastify';
 
 const presidentCandidate = [
   {
@@ -85,6 +86,9 @@ const nacossCandidate = [
 ];
 
 const Dashboard = () => {
+  useEffect(() => {
+    toast('Welcome, JOHN IFEDOLA');
+  }, []);
   return (
     <article>
       <VoterBio />
@@ -113,6 +117,7 @@ const Dashboard = () => {
           candidates={presidentCandidate}
         />
       </section>
+      <ToastContainer position="top-left" />
     </article>
   );
 };
