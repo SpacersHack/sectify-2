@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Button from './component/button';
 import styles from './landing.module.css';
+import { ConnectButton } from '@rainbow-me/rainbowkit';
 
 export default function Landing() {
   const nav = [
@@ -19,12 +20,13 @@ export default function Landing() {
       <header className={styles.header}>
         <nav className={styles.nav}>
           <h3>SECTIFY</h3>
-          <p className="flex items-center">
+          <p className="flex items-end">
             <Link href={'/auth/login'} className="mx-4 md:mx-4 text-black">
               Sign In
             </Link>
-            <Button href={'/auth/connectWallet'}>Connect wallet</Button>
-          </p>
+            </p>
+            <ConnectButton/>
+         
         </nav>
       </header>
       <section className="text-center text-white relative z-10">

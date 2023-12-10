@@ -1,20 +1,18 @@
-'use client';
-import '@rainbow-me/rainbowkit/styles.css';
+"use client";
+import "@rainbow-me/rainbowkit/styles.css";
+import {  WagmiConfig,  configureChains, createConfig } from "wagmi";
+import { RainbowKitProvider, darkTheme, getDefaultWallets  } from "@rainbow-me/rainbowkit";
+import { sepolia } from "viem/chains";
+import { publicProvider } from "wagmi/providers/public";
 
-import { getDefaultWallets, RainbowKitProvider } from '@rainbow-me/rainbowkit';
-import { configureChains, createConfig, WagmiConfig } from 'wagmi';
-import { mainnet, polygon, optimism, arbitrum, base, zora } from 'wagmi/chains';
-import { alchemyProvider } from 'wagmi/providers/alchemy';
-import { publicProvider } from 'wagmi/providers/public';
-
-const { chains, publicClient } = configureChains(
-  [mainnet, polygon, optimism, arbitrum, base, zora],
-  [alchemyProvider({ apiKey: process.env.ALCHEMY_ID }), publicProvider()]
+const { chains, publicClient, webSocketPublicClient } = configureChains(
+  [sepolia],
+  [publicProvider()]
 );
 
 const { connectors } = getDefaultWallets({
-  appName: 'My RainbowKit App',
-  projectId: 'YOUR_PROJECT_ID',
+  appName: 'sectify',
+  projectId: 'af355cf178ccd4c412bb89ee35dbb5df',
   chains,
 });
 
@@ -22,12 +20,20 @@ const wagmiConfig = createConfig({
   autoConnect: true,
   connectors,
   publicClient,
+  webSocketPublicClient,
 });
 
 const WagProvider = ({ children }) => {
   return (
     <WagmiConfig config={wagmiConfig}>
-      <RainbowKitProvider chains={chains}>{children}</RainbowKitProvider>
+      <RainbowKitProvider
+        chains={chains}
+        theme={darkTheme({
+          accentColor: "rgb(0,153,71)",
+        })}
+      >
+        {children}
+      </RainbowKitProvider>
     </WagmiConfig>
   );
 };
