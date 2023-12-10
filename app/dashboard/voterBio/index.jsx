@@ -1,6 +1,11 @@
 import Button from '../../component/button';
 import VoterDetail from './detail';
 import Image from 'next/image';
+
+
+
+
+
 const voter = {
   name: 'JOHN DOE IFEDOLA',
   vin: '54F7 C4C9 3737 8896 432',
@@ -9,6 +14,8 @@ const voter = {
   address: '4140 Parker Rd. Allentown, New Mexico ',
   delim: 'LAGOS | ALIMOSHO',
 };
+
+
 
 const VoterBio = () => {
   return (
