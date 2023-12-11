@@ -1,36 +1,43 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Sectify: A Blockchain Voting Application
 
-## Getting Started
 
-First, run the development server:
+Inspiration: A more secured platform that enables transparency in the electoral process in Africa (Nigeria) integrating the Web3 technology
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+What it does: 
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+The application helps to build a formable act in credibility using an approach to select applicant. 
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Sectify as a decentralized evoting platform enables users vote seamlessly without a double doubt of manipulation of results.
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+How we built it: 
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+The UIs were designed using figma, frontend was developed using next.js, smart contract used Solidity, javascript
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+Challenges we ran into: Integration of the Smart contract using wagmi which was later resolved.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Accomplishments that we're proud of: We were able to communicate user experience and 70% understood the importance of the product which inturn is going to be the future of credible election in the African electoral system
+
+
+What we learned:
+
+Users guide must always be considered
+We need to always pursue daily prototype using the 5Ys
+Developing isn't just building but seeking more communication for effective usage
+
+
+What's next for SECTIFY: As a team we hope to achieve
+
+Communicate our platform to higher authorities which has been on the line
+Test our platform to lesser users like college student and local elections
+Run more features like voters education, language interpretation and the disabled and veterans pattern for voting.
+Explore more feedback from customers and implement relevant works
+
+
+Built With
+JavaScript, Nextjs and Solidity
+
+
